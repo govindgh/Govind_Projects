@@ -5,100 +5,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>7 Years of Experience - Live Applications</title>
+    <title>Govind Soni | Live Projects</title>
+    <!-- Google Fonts for Stylish Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        /* Body Font */
         body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
+            font-family: 'Roboto', sans-serif;
             background-color: #f4f7f6;
             color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Prevent horizontal scroll */
         }
 
+        /* Header Font */
         header {
-            background-color: #35424a;
+            background-color: #2C3E50;
             color: white;
-            padding: 20px;
+            padding: 60px 0;
             text-align: center;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
         }
 
         header h1 {
-            margin: 0;
+            margin-bottom: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 3rem;
+        }
+
+        header p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 30px;
         }
 
         section {
-            padding: 40px;
-            margin: 20px;
+            padding: 50px 20px;
+            margin-top: 40px;
         }
 
         h2 {
             text-align: center;
-            font-size: 2rem;
-            color: #333;
-            margin-bottom: 30px;
-        }
-
-        .app-list {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
+            font-size: 2.5rem;
+            color: #34495E;
+            margin-bottom: 40px;
+            font-family: 'Poppins', sans-serif;
         }
 
         .app-card {
             background-color: #fff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            overflow: hidden;
-            padding: 20px;
-            transition: transform 0.3s ease-in-out;
+            padding: 25px;
+            transition: transform 0.3s ease;
+            height: 100%;
+            margin-bottom: 20px;
+            font-family: 'Roboto', sans-serif;
         }
 
         .app-card:hover {
             transform: translateY(-10px);
         }
 
-        .app-card img {
-            width: 100%;
-            border-radius: 8px;
-        }
-
         .app-card h3 {
-            margin-top: 15px;
+            font-family: 'Poppins', sans-serif;
             font-size: 1.5rem;
-            color: #35424a;
+            color: #2C3E50;
+            margin-bottom: 15px;
         }
 
         .app-card p {
-            font-size: 1rem;
+            font-size: 1.1rem;
             color: #555;
+            margin-bottom: 15px;
         }
 
         .app-link {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 8px 20px;
-            background-color: #35424a;
+            padding: 10px 20px;
+            background-color: #1ABC9C;
             color: white;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
+            transition: background-color 0.3s ease;
+            font-family: 'Roboto', sans-serif;
         }
 
         .app-link:hover {
-            background-color: #4285f4;
+            background-color: #16A085;
         }
 
         footer {
-            background-color: #35424a;
+            background-color: #2C3E50;
             color: white;
-            padding: 10px 0;
+            padding: 20px;
             text-align: center;
-            margin-top: 30px;
+            margin-top: 40px;
+            font-family: 'Roboto', sans-serif;
         }
 
         footer a {
-            color: white;
+            color: #1ABC9C;
             text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #16A085;
+        }
+
+        /* Stylish Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #1ABC9C;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #16A085;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .app-card {
+                margin-bottom: 30px;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
         }
     </style>
 </head>
@@ -106,50 +156,61 @@
 <body>
 
     <header>
-        <h1>7 Years of Front-End Development</h1>
-        <p>Explore the 5 Live Applications Developed by Me</p>
+        <h1>Live Projects by Govind Soni</h1>
+        <p style="padding:20px 25px 0px 25px;">Experience the innovation and expertise behind the live projects I’ve crafted during my career as a Front-End Developer. Each project reflects my dedication to creating dynamic, user-focused solutions with cutting-edge technologies. Explore how I’ve transformed ideas into impactful digital experiences that drive results.</p>
+        
     </header>
 
-    <section>
-        <h2>My Live Applications</h2>
-        <div class="app-list">
-            <div class="app-card">
-                <img src="https://via.placeholder.com/300" alt="App 1 Screenshot">
-                <h3>Weather App</h3>
-                <p>A responsive weather forecasting app built with React.js and OpenWeather API.</p>
-                <a href="#" class="app-link" target="_blank">View App</a>
-            </div>
-            <div class="app-card">
-                <img src="https://via.placeholder.com/300" alt="App 2 Screenshot">
-                <h3>Task Manager</h3>
-                <p>A simple yet powerful task manager app built with Vue.js and Firebase for real-time data sync.</p>
-                <a href="#" class="app-link" target="_blank">View App</a>
-            </div>
-            <div class="app-card">
-                <img src="https://via.placeholder.com/300" alt="App 3 Screenshot">
-                <h3>Portfolio Website</h3>
-                <p>My personal portfolio to showcase my work and experience as a front-end developer.</p>
-                <a href="#" class="app-link" target="_blank">View App</a>
-            </div>
-            <div class="app-card">
-                <img src="https://via.placeholder.com/300" alt="App 4 Screenshot">
-                <h3>E-commerce Store</h3>
-                <p>An e-commerce platform with a modern design, built using React, Redux, and Firebase for authentication.</p>
-                <a href="#" class="app-link" target="_blank">View App</a>
-            </div>
-            <div class="app-card">
-                <img src="https://via.placeholder.com/300" alt="App 5 Screenshot">
-                <h3>Social Media Dashboard</h3>
-                <p>A dashboard for tracking and analyzing social media data built with Angular and Chart.js.</p>
-                <a href="#" class="app-link" target="_blank">View App</a>
+    <section id="live-applications">
+        <h2>Live Applications</h2>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3 col-sm-12">
+                    <div class="app-card">
+                        <h3>Responsive Layout Auto-Reload Grid Cards</h3>
+                        <p>A dynamic layout featuring responsive grid cards that adjust seamlessly to screen sizes. The grid auto-reloads to reflect real-time updates, ensuring content stays fresh and accessible. Ideal for showcasing portfolios, products, or articles with a sleek, modern design.</p>
+                        <a href="https://govindgh.github.io/respnsive_autoreloading_cards/" class="app-link" target="_blank">View App</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-12">
+                    <div class="app-card">
+                        <h3>E-commerce Product Dashboard</h3>
+                        <p>This is a Single Page Application (SPA) having 20 E-commerce products. Implemented product sorting and filtering using array filter. I’ve implemented pagination to load more products dynamically on scroll. On click of any product, it will open a modal with additional details.</p>
+                        <a href="https://govindgh.github.io/Front-End-Assignment--Strategywerks/" class="app-link" target="_blank">View App</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-12">
+                    <div class="app-card">
+                        <h3>Employee Management App</h3>
+                        <p>A user-friendly app to manage employees, allowing you to easily add, view, and delete employee records. Includes seamless routing for navigation between pages like Home, Add Employee, and Employee List, ensuring an organized and efficient user experience.</p>
+                        <a href="https://govindgh.github.io/emp_app_govind/" class="app-link" target="_blank">View App</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-12">
+                    <div class="app-card">
+                        <h3>Company Directory Manager</h3>
+                        <p>A secure application featuring login and logout functionality to ensure user authentication. Explore a comprehensive list of companies, complete with detailed descriptions for each. Perfect for managing and accessing company information in an organized and user-friendly interface. Username - Encora, Password - Encora@123</p>
+                        <a href="https://govindgh.github.io/Encora_assignment_Govind_Soni/#/login" class="app-link" target="_blank">View App</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>Designed & Developed by <a href="https://www.yourportfolio.com" target="_blank">Your Name</a> | 7 Years of Experience</p>
+        <p>Designed & Developed by Govind Soni </p>
+        <p>
+            <a href="https://www.linkedin.com/in/govind-soni-41686411b/" target="_blank">LinkedIn</a> |
+            <a href="mailto:govindsoni1795@gmail.com">Email</a> 
+            
+        </p>
     </footer>
 
+    <!-- Bootstrap JS (Optional but useful for Navbar toggler) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
